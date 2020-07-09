@@ -8,4 +8,4 @@
  run the following command on the folders 'backend' and 'frontend'
  `npm start`
  
- ## note that the backend and frontend execute on ports 3001 and 3000 respectively
+ ### note that the backend and frontend execute on ports 3001 and 3000 respectively
