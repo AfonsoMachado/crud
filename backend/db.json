@@ -1,0 +1,29 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Afonso Machado",
+      "email": "afonso@empresa.com"
+    },
+    {
+      "name": "Vinicius",
+      "email": "vinicius@empresa.com.br",
+      "id": 4
+    },
+    {
+      "name": "Rafaela",
+      "email": "rafaela@empresa.com.br",
+      "id": 5
+    },
+    {
+      "name": "Junior",
+      "email": "jr@empresa.com.br",
+      "id": 6
+    },
+    {
+      "name": "Maria da Silva",
+      "email": "maria@empresa.com.br",
+      "id": 7
+    }
+  ]
+}
