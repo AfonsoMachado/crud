@@ -10,7 +10,7 @@ const headerProps = {
 }
 
 // Local aonde estão armazenados os usuarios
-//const URL = window.location.href.includes('localhost') ? 'http://localhost:3001/users' : 'https://devflix-afonso.herokuapp.com/categorias';
+//const baseUrl = window.location.href.includes('localhost') ? 'http://localhost:3001/users' : 'https://crud-react-backend.herokuapp.com/users';
 const baseUrl = 'http://localhost:3001/users'
 // Estado inicial do componente
 const initialState = {
