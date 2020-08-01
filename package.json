@@ -18,9 +18,9 @@
     "react-scripts": "3.4.1"
   },
   "scripts": {
-    "server": "node ./server.js",
+    "server": "node ./db/server.js",
     "dev": "concurrently \"react-scripts start\" \"node ./db/server.js\"",
-    "start": "node ./server.js",
+    "start": "node ./db/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
