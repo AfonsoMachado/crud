@@ -3,6 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Aplicação simples desenvolvida utilizando do ReactJS e da bibloteca [json-server](https://github.com/typicode/json-server) como backend.
 
 Frontend da aplicação hospedado em: https://crud-react.vercel.app/
+
 Backend da aplicação hospedado em: https://crud-react-backend.herokuapp.com/users
 
 ## Scripts para executar localmente
