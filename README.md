@@ -12,7 +12,7 @@ Instalação das dependências usando o comando
 
 ### `npm install`
 
-Execução do frontend e backend
+Execução do frontend e backend locamente
 
 ### `npm run dev`
 
