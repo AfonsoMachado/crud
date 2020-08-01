@@ -10,10 +10,11 @@ const headerProps = {
 }
 
 // Local aonde estão armazenados os usuarios
+//const URL = window.location.href.includes('localhost') ? 'http://localhost:3001/users' : 'https://devflix-afonso.herokuapp.com/categorias';
 const baseUrl = 'http://localhost:3001/users'
 // Estado inicial do componente
 const initialState = {
-    user: { name: '', email: ''},
+    user: { name: '', email: '' },
     list: []
 }
 
@@ -26,13 +27,13 @@ export default class UserCrud extends Component {
     componentWillMount() {
         // Trazendo todos os usuarios do servidor
         axios(baseUrl).then(resp => {
-            this.setState({ list: resp.data }) 
+            this.setState({ list: resp.data })
         })
     }
 
     // Função para limpar o formulario, limpar o user
     clear() {
-        this.setState({ user: initialState.user})
+        this.setState({ user: initialState.user })
     }
 
     // Incluir um novo usuario (POST) e alterar um usuario existente (PUT)
@@ -58,7 +59,7 @@ export default class UserCrud extends Component {
         // Gerando uma lista removendo o usuario que foi passado por parametro
         const list = this.state.list.filter(u => u.id !== user.id)
         // Colocando o elemento na primeira posição
-        if(add) list.unshift(user)
+        if (add) list.unshift(user)
 
         return list
     }
@@ -77,19 +78,19 @@ export default class UserCrud extends Component {
                     <div className="col-12 col-md-6">
                         <div className="form-group">
                             <label>Nome</label>
-                            <input type="text" className="form-control" name="name" value={this.state.user.name} onChange={e=> this.updateField(e)} placeholder="Digite o nome..."/>
+                            <input type="text" className="form-control" name="name" value={this.state.user.name} onChange={e => this.updateField(e)} placeholder="Digite o nome..." />
                         </div>
                     </div>
 
                     <div className="col-12 col-md-6">
                         <div className="form-group">
                             <label>E-mail</label>
-                            <input type="text" className="form-control" name="email" value={this.state.user.email} onChange={e=> this.updateField(e)} placeholder="Digite o e-mail..."/>
+                            <input type="text" className="form-control" name="email" value={this.state.user.email} onChange={e => this.updateField(e)} placeholder="Digite o e-mail..." />
                         </div>
                     </div>
                 </div>
 
-                <hr/>
+                <hr />
                 <div className="row">
                     <div className="col-12 d-flex justify-content-end">
                         <button className="btn btn-primary" onClick={e => this.save(e)}>
@@ -137,7 +138,7 @@ export default class UserCrud extends Component {
 
     // Função par renderizar as linhas da tabela
     renderRows() {
-        return this.state.list.map( user => {
+        return this.state.list.map(user => {
             return (
                 <tr key={user.id}>
                     <td>{user.id}</td>
