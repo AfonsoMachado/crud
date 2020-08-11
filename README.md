@@ -1,23 +1,56 @@
+# Crud React
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Aplicação simples desenvolvida utilizando do ReactJS e da bibloteca [json-server](https://github.com/typicode/json-server) como backend.
+Aplicação simples desenvolvida com a finalidade de treinar recursos em React para um CRUD (Create, Read, Update, Delete). Desenvolvido durante a realização do curso [Web Moderno com JavaScript 2020 COMPLETO + Projetos](https://www.cod3r.com.br/courses/web-moderno) promovido pela [Cod3r](https://www.cod3r.com.br/)
 
-Frontend da aplicação hospedado em: https://crud-react.vercel.app/
+## :computer: Tecnologias
+<ul>
+  <li><a href="https://github.com/typicode/json-server">JSON Server</a></li>
+  <li><a href="https://github.com/facebook/create-react-app">Create React App</a></li>
+  <li><a href="https://github.com/facebook/react">React</a></li>
+  <li><a href="https://github.com/kimmobrunfeldt/concurrently">Concurrently</a></li>
+  <li><a href="https://github.com/axios/axios">Axios</a></li>
+  <li><a href="https://github.com/twbs/bootstrap">Bootstrap</a></li>
+</ul>
 
-Backend da aplicação hospedado em: https://crud-react-backend.herokuapp.com/users
+## :cloud: Hospedagem
 
-## Scripts para executar localmente
+Este aplicativo foi hospedado na web para fins educativos e de testes, pode ser acessado online a partir de:
+  - Frontend: https://crud-react.vercel.app/
+  - Backend: https://crud-react-backend.herokuapp.com/users
 
-Instalação das dependências usando o comando
+## :fire: Instalando e executando localmente
 
-### `npm install`
+É necessário ter um ambiente NodeJS ou Yarn instalado em sua máquina
 
-Execução do frontend e backend locamente
+### Clonando o repositório:
 
-### `npm run dev`
+```
+$ git clone https://github.com/AfonsoMachado/crud-react.git
+```
 
-A aplicação está pré configurada para rodar localmente da seguinte maneira:
+### Executando backend e frontend simultâneamente
 
-#### BACKEND -> localhost:3001/users
-#### FRONTEND -> localhost:3000
+Para facilitar a execução localmente, foi usada a library Concurrently para executar backend e frontend simultâneamente com um único comando
 
+```bash
+# Go to server folder
+$ cd crud-react
+
+# Install Dependencies
+$ npm install
+
+# Run backend and frontend
+$ npm run dev
+```
+ - Backend executando em http://localhost:3001/users
+ - Frontend executando em http://localhost:3000
+ 
+ ## :memo: Licença
+
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+ 
+ ---
+
+<p align="center">Feito com 💜 por <strong><a href="https://www.linkedin.com/in/AfonsoMachado/">Afonso Machado</a> 🥰 </strong> </p>
